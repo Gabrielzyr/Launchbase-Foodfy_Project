@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.njk" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-
-<body>
-    <header>
-        <div>
-            <a href="/src/index.html">
-                <img src="./assets/logo.png" alt="Foodfy Logo">
-            </a>
-
-            <a href="/src/about.html">Sobre</a>
-            <a href="/src/recipies.html">Receitas</a>
-        </div>
-    </header>
-
+{% block content %}
     <section>
         <div>
             <h2>As Melhores receitas</h2>
@@ -27,7 +8,7 @@
                 melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
         </div>
     </section>
-
+    
     <div class="container">
         <h2>Mais acessados</h2>
 
@@ -80,11 +61,7 @@
 
     </div>
 
-    <footer>
-        <p>Todos os direitos reservados receitas Foodfy</p>
-    </footer>
-
-    <div class="modal-overlay">
+        <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content">
                 <div class="modal-img-wrp">
@@ -97,7 +74,23 @@
         </div>
     </div>
 
-    <script src="./scripts/index.js"></script>
-</body>
+{% endblock content %}
 
-</html>
+
+
+
+
+  
+
+    {# <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-img-wrp">
+                    <img src="" alt="food img">
+                </div>
+                <h2></h2>
+                <p></p>
+                <button class="close-modal">Fechar Modal</button>
+            </div>
+        </div>
+    </div> #}

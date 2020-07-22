@@ -1,4 +1,3 @@
-
 const cards = document.querySelectorAll('.card')
 const modal = document.querySelector('.modal-overlay')
 const closeModal = document.querySelector('.close-modal')
