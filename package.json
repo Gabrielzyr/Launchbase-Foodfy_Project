@@ -2,9 +2,8 @@
   "name": "foodfy_project",
   "version": "1.0.0",
   "description": "project-foodfy",
-  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon src/server.js"
   },
 "dependencies": {
     "express": "^4.17.1",

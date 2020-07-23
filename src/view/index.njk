@@ -4,64 +4,29 @@
     <section>
         <div>
             <h2>As Melhores receitas</h2>
-            <p>Aprenda a construir os
-                melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
         </div>
     </section>
-    
+
     <div class="container">
         <h2>Mais acessados</h2>
 
         <div class="cards-wrp">
-
-            <div class="card" id="1-teste">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
+            {% for recipe in recipes %}
+                <div class="card" id="{{recipe.index}}">
+                    <div class="img-wrp">
+                        <img src="{{recipe.image}}" alt="imagem">
+                    </div>
+                    <h3>{{recipe.title}}</h3>
+                    <p>por {{recipe.author}}</p>
                 </div>
-                <h3>Hamburguer muito bom</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card" id="2-teste">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
+            {% endfor %}
 
         </div>
 
     </div>
 
-        <div class="modal-overlay">
+    <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content">
                 <div class="modal-img-wrp">
@@ -76,13 +41,7 @@
 
 {% endblock content %}
 
-
-
-
-
-  
-
-    {# <div class="modal-overlay">
+{# <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content">
                 <div class="modal-img-wrp">
@@ -94,3 +53,40 @@
             </div>
         </div>
     </div> #}
+
+{#  <div class="card" id="2-teste">
+                <div class="img-wrp">
+                    <img src="./assets/burger.png" alt="imagem">
+                </div>
+                <h3>nome da comida</h3>
+                <p>por Joel sabugo</p>
+            </div>
+            <div class="card">
+                <div class="img-wrp">
+                    <img src="./assets/burger.png" alt="imagem">
+                </div>
+                <h3>nome da comida</h3>
+                <p>por Joel sabugo</p>
+            </div>
+            <div class="card">
+                <div class="img-wrp">
+                    <img src="./assets/burger.png" alt="imagem">
+                </div>
+                <h3>nome da comida</h3>
+                <p>por Joel sabugo</p>
+            </div>
+            <div class="card">
+                <div class="img-wrp">
+                    <img src="./assets/burger.png" alt="imagem">
+                </div>
+                <h3>nome da comida</h3>
+                <p>por Joel sabugo</p>
+            </div>
+            <div class="card">
+                <div class="img-wrp">
+                    <img src="./assets/burger.png" alt="imagem">
+                </div>
+                <h3>nome da comida</h3>
+                <p>por Joel sabugo</p>
+            </div>
+ #}

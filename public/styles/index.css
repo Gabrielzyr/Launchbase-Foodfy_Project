@@ -96,13 +96,13 @@ section div p {
 
 .img-wrp img {
     min-width: 300px;
-    max-width: 320px;
+    max-width: 360px;
     min-height: 140px;
     transition: 400ms;
 }
 
 .img-wrp img:hover {
-    min-width: 370px;
+    min-width: 400px;
 }
 
 footer {
