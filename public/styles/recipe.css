@@ -1,0 +1,27 @@
+ul {
+    list-style-position: inside;
+}
+
+.food-img {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+    height: 280px;
+    overflow: hidden;
+    display:table-cell;
+    vertical-align:middle;
+    border-radius: 15px;
+}
+
+.food-img img {
+    position: absolute;
+    top: -25%;
+    max-width: 1300px;
+    min-width: 940px;
+    min-height: 280px;
+}
+
+.recipe-content {
+    margin: 0 auto;
+    width: 940px;
+}

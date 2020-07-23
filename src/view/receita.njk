@@ -1,0 +1,63 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/recipe.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="food-img">
+        <img src="/assets/burger.png" alt="{{recipe.title}}">
+    </div>
+    <div class="recipe-content">
+        <h2>Triplo Bacon Burger</h2>
+        <p>por Jorge Mateus</p>
+
+        <div class="ingred">
+            <div>
+                <h2>Ingredientes</h2>
+                <span>Monstrar</span>
+                <span>Esconder</span>
+            </div>
+
+            <ul>
+                <li>ingrediente 1</li>
+                <li>ingrediente 2</li>
+                <li>ingrediente 3</li>
+                <li>ingrediente 4</li>
+                <li>ingrediente 5</li>
+            </ul>
+        </div>
+        <div class="prepar">
+            <div>
+                <h2>Modo de preparo</h2>
+                <span>Monstrar</span>
+                <span>Esconder</span>
+            </div>
+
+            <ul>
+                <li>ingrediente 1</li>
+                <li>ingrediente 2</li>
+                <li>ingrediente 3</li>
+                <li>ingrediente 4</li>
+                <li>ingrediente 5</li>
+            </ul>
+        </div>
+
+        <div class="adt-info">
+            <div>
+                <h2>Informações adcionais</h2>
+                <span>Monstrar</span>
+                <span>Esconder</span>
+            </div>
+            <p>loremppaaaaaaaaaaaaaaaaaaaaaaaaaaa a a a a asad sa fafsa
+                fa ffasfaf fafsaf fafsaf faffsfa afsaf  sfasf afasf afsf
+                axsaxsasx.
+            </p>
+
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/recipe.js"></script>
+{% endblock scripts %}
