@@ -1,0 +1,64 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/recipe.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="food-img">
+        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+    </div>
+
+    <div class="recipe-title">
+        <h1>{{recipe.title}}</h1>
+        <p>por
+            {{recipe.author}}</p>
+    </div>
+
+    <div class="recipe-content">
+        <div class="ingred">
+            <div class="btns-wrp">
+                <h2>Ingredientes</h2>
+                <button class="rec-show ingr hide">MONSTRAR</button>
+                <button class="rec-hide ingr show">ESCONDER</button>
+            </div>
+
+            <ul class="db-data ingr show">
+                {% for ingredients in recipe.ingredients %}
+                    <li>
+                        <p>{{ingredients}};</p>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+        <div class="prepar">
+            <div class="btns-wrp">
+                <h2>Modo de preparo</h2>
+                <button class="rec-show prep">MONSTRAR</button>
+                <button class="rec-hide prep">ESCONDER</button>
+            </div>
+
+            <ul class="db-data prep">
+                {% for preparation in recipe.preparation %}
+                    <li>
+                        <p>{{preparation}};</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="adt-info">
+            <div class="btns-wrp">
+                <h2>Informações adcionais</h2>
+                <button class="rec-show Inf">MONSTRAR</button>
+                <button class="rec-hide Inf">ESCONDER</button>
+            </div>
+            <p class="db-data Inf">{{recipe.information}}</p>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/recipe.js"></script>
+{% endblock scripts %}

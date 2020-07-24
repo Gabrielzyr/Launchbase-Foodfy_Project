@@ -4,7 +4,7 @@
     <div class="container">
         <div class="cards-wrp">
             {% for recipe in recipes %}
-                <div class="card" id="{{recipe.indexOf}}">
+                <div class="card" id="{{loop.index - 1}}">
                     <div class="img-wrp">
                         <img src="{{recipe.image}}" alt="imagem">
                     </div>
@@ -15,7 +15,7 @@
 
             {% endfor %}
             {% for recipe in recipes %}
-                <div class="card" id="{{recipe.indexOf}}">
+                <div class="card" id="{{loop.index - 1}}">
                     <div class="img-wrp">
                         <img src="{{recipe.image}}" alt="imagem">
                     </div>
@@ -44,7 +44,7 @@
     </div>
 {% endblock content %}
 
-<!-- <script src="/scripts/index.js"></script> -->
-</body>
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
 
-</html>
+{% endblock scripts %}

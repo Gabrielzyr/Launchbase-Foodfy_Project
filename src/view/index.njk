@@ -13,7 +13,7 @@
 
         <div class="cards-wrp">
             {% for recipe in recipes %}
-                <div class="card" id="{{recipe.index}}">
+                <div class="card" id="{{loop.index - 1}}">
                     <div class="img-wrp">
                         <img src="{{recipe.image}}" alt="imagem">
                     </div>
@@ -46,52 +46,3 @@
 
 {% endblock scripts %}
 
-{# <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-content">
-                <div class="modal-img-wrp">
-                    <img src="" alt="food img">
-                </div>
-                <h2></h2>
-                <p></p>
-                <button class="close-modal">Fechar Modal</button>
-            </div>
-        </div>
-    </div> #}
-
-{#  <div class="card" id="2-teste">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
-            <div class="card">
-                <div class="img-wrp">
-                    <img src="./assets/burger.png" alt="imagem">
-                </div>
-                <h3>nome da comida</h3>
-                <p>por Joel sabugo</p>
-            </div>
- #}
