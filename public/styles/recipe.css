@@ -1,10 +1,21 @@
 ul {
     list-style-position: inside;
+    position: relative;
+}
+
+ul li span {
+    position: absolute;
+    left: 14px;
+}
+
+
+button {
+    cursor: pointer;
 }
 
 .food-img {
     position: relative;
-    margin: 0 auto;
+    margin: 50px auto;
     width: 940px;
     height: 280px;
     overflow: hidden;
@@ -21,7 +32,74 @@ ul {
     min-height: 280px;
 }
 
+.recipe-title {
+    text-align: center;
+}
+
+.recipe-title h1 {
+    margin-bottom: 4px;
+    font-size: 36px;
+}
+
+.recipe-title p {
+    font-size: 20px;
+    color: #777777;
+}
+
 .recipe-content {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 940px;
+}
+
+.recipe-content h2 {
+    font-size: 24px;
+}
+
+.ingred,
+.prepar,
+.adt-info {
+    min-height: 50px;
+}
+
+.db-data {
+    margin: 20px 0 37px;
+    font-size: 18px;
+    color: #444444; 
+    line-height: 28px;
+}
+
+.db-data.Inf{
+    margin-bottom: 0;
+}
+p.Inf {
+    line-height: 25px;
+}
+.db-data,
+.rec-hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.btns-wrp {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.btns-wrp button {
+    outline: none;
+    color: #999999;
+    font-size: 12px;
+    margin-left: 8px;
+    padding-bottom: 3px;
+    border: 0;
+    background-color: transparent;    
 }
