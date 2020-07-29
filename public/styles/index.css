@@ -21,6 +21,11 @@ a {
     text-decoration: none;
 }
 
+.curPage {
+    font-weight: bold;
+    color: #111111;
+}
+
 header {
     margin: 36px auto 0;
     width: 940px;

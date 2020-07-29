@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foodfy</title>
     <link rel="stylesheet" href="/styles/index.css">
     {% block styles %}
     {% endblock styles %}
@@ -12,13 +12,14 @@
 
 <body>
     <header>
-        <div>
-            <a href="/">
+        <div class="header-links">
+            <a href="/index">
                 <img src="/assets/logo.png" alt="Foodfy Logo">
             </a>
 
             <a href="/sobre">Sobre</a>
             <a href="/receitas">Receitas</a>
+            <a href="/admin">Admin</a>
         </div>
     </header>
 
@@ -32,6 +33,7 @@
 
     {% block scripts %}
     {% endblock scripts %}
+    <script src="/scripts/layoutScr.js"></script>
 </body>
 
 </html>
