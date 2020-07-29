@@ -1,0 +1,20 @@
+.adm-header {
+    margin: 55px auto 20px;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adm-header h2 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.adm-header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 9px 20px;
+    background-color: #6558C3;
+    border-radius: 4px;
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Foodfy</title>
+    <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/admin/index.css">
     {% block styles %}
     {% endblock styles %}
@@ -16,10 +17,6 @@
             <a href="/index">
                 <img src="/assets/logo-white.png" alt="Foodfy Logo">
             </a>
-
-            <a href="/sobre">Sobre</a>
-            <a href="/receitas">Receitas</a>
-            <a href="/admin"></a>
         </div>
     </header>
 
@@ -27,13 +24,9 @@
     {% endblock content %}
 
 
-    <footer>
-        <p>Todos os direitos reservados receitas Foodfy</p>
-    </footer>
-
     {% block scripts %}
     {% endblock scripts %}
-    <script src="/scripts/layoutScr.js"></script>
+    {# <script src="/scripts/layoutScr.js"></script> #}
 </body>
 
 </html>

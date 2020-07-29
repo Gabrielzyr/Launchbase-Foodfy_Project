@@ -1,9 +1,20 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 header {
     width: 100%;
+    height: 80px;
     background-color: #111111;
+}
+
+.header-links {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header-links a img{
+    margin-left: 1px;
+    margin-top: 27px;
 }

@@ -1,5 +1,38 @@
 {% extends "layoutAdmin.njk" %}
 
+{% block styles %}
+    <link rel="stylesheet" href="/styles/admin/recp-list.css">
+{% endblock styles %}
+
 {% block content %}
-<h3>Admin first page</h3>
+
+    <div class="recipes-table">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Gerenciar Receitas</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for recipe in recipes %}
+                <tr>
+                    <td>
+                        <span class="recipe-img" style="background: url('{{recipe.image}}')"></span>
+                        <div>
+                            <h3>{{recipe.title}}</h3>
+                            <p>por {{recipe.author}}</p>
+                            <a class="rcp-link" href="/admin/recipes/{{recipe.id}}">Visualizar</a>
+                        </div>
+                    </td> 
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
 {% endblock content %}

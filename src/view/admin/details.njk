@@ -1,10 +1,16 @@
-{% extends "layoutRecipe.njk" %}
+{% extends "layoutAdmin.njk" %}
 
 {% block styles %}
+    <link rel="stylesheet" href="/styles/admin/details.css">
     <link rel="stylesheet" href="/styles/recipes/recipe.css">
 {% endblock styles %}
 
 {% block content %}
+
+    <div class="adm-header">
+        <h2>Receita: Triplo bacon</h2>
+        <a href="#">Editar receita</a>
+    </div>
     <div class="food-img">
         <img src="{{recipe.image}}" alt="{{recipe.title}}">
     </div>
