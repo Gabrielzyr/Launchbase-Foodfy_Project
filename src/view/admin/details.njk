@@ -8,16 +8,19 @@
 {% block content %}
 
     <div class="adm-header">
-        <h2>Receita: Triplo bacon</h2>
-        <a href="#">Editar receita</a>
+        <h2>Receita: {{recipe.title}}</h2>
+        <a href="/admin/recipes/{{recipe.id}}/edit">Editar receita</a>
     </div>
-    <div class="food-img">
-        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+    <div>
+        <div class="food-img">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
+        </div>
     </div>
 
     <div class="recipe-title">
         <h1>{{recipe.title}}</h1>
-        <p>por {{recipe.author}}</p>
+        <p>por
+            {{recipe.author}}</p>
     </div>
 
     <div class="recipe-content">

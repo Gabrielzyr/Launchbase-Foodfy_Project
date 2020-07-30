@@ -21,8 +21,8 @@ button {
     width: 940px;
     height: 280px;
     overflow: hidden;
-    display:table-cell;
-    vertical-align:middle;
+    display:block;
+    /* vertical-align:middle; */
     border-radius: 15px;
 }
 

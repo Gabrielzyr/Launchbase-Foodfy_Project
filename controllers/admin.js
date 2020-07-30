@@ -23,18 +23,6 @@ exports.show = function (req, res) {
     return res.render('admin/details', { recipe })
 }
 
-// exports.show = function(req,res) {
-//     const { id } = req.params
-//     const foundInstructor = data.instructors.find(function(instructor){
-//         return instructor.id == id
-//     })
-//     if (!foundInstructor) return res.send('instructor not found')
-
-//     const instructor = {
-//         ...foundInstructor,
-//         age: age(foundInstructor.birth),
-//         services: foundInstructor.services.split(","),
-//         created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
-//     }
-//     return res.render('instructors/show', { instructor })
-// }
+exports.edit = function (req, res) {
+    return res.render("admin/edit")
+}
