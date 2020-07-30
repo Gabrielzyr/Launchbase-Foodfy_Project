@@ -6,42 +6,22 @@
 
 {% block content %}
 
-    <section class="fields-container">
+    <form method="POST" action="/admin/recipes?_method=PUT">
+        <section class="fields-container">
 
-        <div class="content-top">
-            <h2>Criando Receita</h2>
-            <div>
-                <button id="delete-btn">Delete</button>
-                <button id="save-btn">Salvar Receita</button>
+            <div class="content-top">
+                <h2>Editando Receita</h2>
+                <div>
+                    {# <form action="/admin/recipes?_method=DELETE" method="post">
+                        <button type="submit" id="delete-btn">Delete</button>
+                    </form> #}
+                    <button type="submit" id="save-btn">Salvar Receita</button>
+                </div>
             </div>
-        </div>
-        <div class="field-child">
-            <h3>Imagem da receita</h3>
-            <input type="url" name="recipe-img">
-        </div>
-        <div class="field-child" id="ingredients">
-            <h3>Ingredientes</h3>
-
-            <div class="ingredient">
-                <input type="text" name="ingredients[]" value=""/>
-            </div>
-        </div>
-        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
-
-        <div class="field-child" id="methods">
-            <h3>Método de preparo</h3>
-            <div class="method">
-                <input type="text" name="methods[]" value=""/>
-            </div>
-        </div>
-        <button type="button" class="add-method">Adicionar novo passo</button>
-
-        <div class="field-child">
-            <h3>Informações adicionais</h3>
-            <textarea name="atd-info">
-            </textarea>
-        </div>
-    </section>
+            {% include 'admin/fields.njk'%}
+            <input type="hidden" name="id" value={{recipe.id}}>
+        </section>
+    </form>
 
 {% endblock content %}
 

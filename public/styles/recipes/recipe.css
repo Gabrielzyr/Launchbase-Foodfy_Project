@@ -16,7 +16,7 @@ button {
 }
 
 .food-img {
-    position: relative;
+    /* position: relative; */
     margin: 50px auto;
     width: 940px;
     height: 280px;
@@ -27,11 +27,12 @@ button {
 }
 
 .food-img img {
-    position: absolute;
-    top: -25%;
+    /* position: absolute;
+    top: -25%; */
     max-width: 1300px;
     min-width: 940px;
     min-height: 280px;
+    max-height: 400px;
 }
 
 .recipe-title {
