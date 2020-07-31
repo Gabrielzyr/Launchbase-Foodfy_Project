@@ -1,6 +1,7 @@
 .adm-header {
     margin: 55px auto -30px;
     width: 940px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
 }

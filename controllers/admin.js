@@ -84,10 +84,11 @@ exports.put = function (req, res) {
     if (!foundRecipe) return res.send('instructor not found')
 
     const recipe = {
-        id: Number(req.body.id),
         ...foundRecipe,
-        ...req.body
+        ...req.body,
+        id: Number(req.body.id)
     }
+    console.log(id)
     recipesData.recipes[index] = recipe
     fs.writeFile("src/database/data.json", JSON.stringify(recipesData, null, 2), function (err) {
         if (err) return res.send("write file error!")
