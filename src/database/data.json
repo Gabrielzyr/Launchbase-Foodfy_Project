@@ -23,21 +23,6 @@
       "information": "juh"
     },
     {
-      "id": 3,
-      "image": "https://images.unsplash.com/photo-1586439219138-cc6d9a8a1ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "ingredients": [
-        "dad",
-        "adsdafdgdg",
-        "ghhhhhhhhhhhhhhhhh"
-      ],
-      "methods": [
-        "fgggggggggggggggggg",
-        "fhhhhhhhhhhhhh",
-        "fhhhhhhhhhg"
-      ],
-      "information": "fggggggggggggggggggggggggggggggggg"
-    },
-    {
       "id": 4,
       "image": "afs",
       "ingredients": [
@@ -61,6 +46,22 @@
         "FAÇA ISSO"
       ],
       "information": "NÃO SE QUENTE"
+    },
+    {
+      "id": "6",
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pasta.png",
+      "title": "pasta",
+      "author": "julio henry",
+      "ingredients": [
+        "massa de macarrão",
+        "molho",
+        "água"
+      ],
+      "methods": [
+        "colocar a massa para esquentar",
+        "colocar o molho"
+      ],
+      "information": ""
     }
   ]
 }

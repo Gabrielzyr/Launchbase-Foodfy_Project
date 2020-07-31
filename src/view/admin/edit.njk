@@ -6,22 +6,26 @@
 
 {% block content %}
 
-    <form method="POST" action="/admin/recipes?_method=PUT">
-        <section class="fields-container">
-
-            <div class="content-top">
-                <h2>Editando Receita</h2>
-                <div>
-                    {# <form action="/admin/recipes?_method=DELETE" method="post">
-                        <button type="submit" id="delete-btn">Delete</button>
-                    </form> #}
-                    <button type="submit" id="save-btn">Salvar Receita</button>
-                </div>
+    <section class="fields-container">
+       
+        <div class="content-top">
+            <h2>Editando Receita</h2>
+            <div>
+                <button form="delete-recp" type="submit" id="delete-btn">Delete</button>
+                <button form="save-edit" type="submit" id="save-btn">Salvar Receita</button>
             </div>
+        </div>
+        
+        <form id="save-edit" method="POST" action="/admin/recipes?_method=PUT">
             {% include 'admin/fields.njk'%}
             <input type="hidden" name="id" value={{recipe.id}}>
-        </section>
-    </form>
+        </form>
+        
+        <form id="delete-recp" action="/admin/recipes?_method=DELETE" method="post">
+            <input type="hidden" name="id" value={{recipe.id}}>
+        
+        </form>
+    </section>
 
 {% endblock content %}
 
